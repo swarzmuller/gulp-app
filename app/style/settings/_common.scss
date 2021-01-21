@@ -1,0 +1,38 @@
+// $mainColor: #000
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+svg {
+	overflow: hidden;
+}
+
+.container {
+	width: 1225px;
+	margin: 0 auto;
+	padding: 0 25px;
+	@include r(1224) {
+		width: 1024px;
+	}
+	@include r(1023) {
+		width: 768px;
+		padding: 0 10px;
+	}
+	@include r(767) {
+		width: 640px;
+	}
+	@include r(639) {
+		width: 480px;
+	}
+	@include r(479) {
+		width: 100%;
+	}
+}
+
